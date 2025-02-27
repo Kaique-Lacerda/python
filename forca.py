@@ -7,7 +7,7 @@ print ("")
 Ps = "sucuzinho"
 
 enforcou = False
-acertou= False
+acertou = False
 
 while(not enforcou and not acertou):
     
@@ -17,6 +17,8 @@ while(not enforcou and not acertou):
     index = 0
 
     for letra in Ps:
-        if(chute == letra):
+        if(chute.upper() == letra.upper()):
             print(f"Encontrei a letra {letra} na posição {index}")
-        index = index
+        index = index + 1
+    print("Jogando...")
+print("Fim de Jogo")
