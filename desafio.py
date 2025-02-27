@@ -1,0 +1,5 @@
+nome = input("Qual seu nome? ")
+datadia = input("Dia de vencimento: ")
+datames = input("Mês de vencimento: ")
+valor = input("Valor a se pagar: ")
+print (f"Olá {nome}, sua fatura vence dia {datadia}, do mês de {datames}, no valor de {valor}R$")
