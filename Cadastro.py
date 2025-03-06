@@ -14,6 +14,6 @@ while True:
     Confirmação = str(input("Y/N"))
 
     if (Confirmação == "Y"):
-            print("Cadastro Concluido!"
+            print("Cadastro Concluido!")
     elif (Confirmação == "N"):
             print("Tente Novamente...")
