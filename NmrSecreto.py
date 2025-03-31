@@ -2,7 +2,7 @@ print ("*******************")
 print ("Bem Vindo ao jogo!!")
 print ("*******************")
 
-numero_secreto = 98
+numero_secreto = 972
 total_tentativas = 25
 rodada =  1
 
