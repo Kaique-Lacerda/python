@@ -1,5 +1,3 @@
-#from contapo import Conta
-
 class Conta:
     def __init__(self, numero, titular, saldo, limite):
         self.__numero = numero
@@ -12,23 +10,26 @@ class Conta:
 
     def depositar(self, valor):
         self.__saldo += valor
-    #print(f"Valor depositado{valor}")
+        print(f"Valor depositado: {valor}")
 
     def sacar(self, valor):
-        self.__saldo -= valor
-    #print(f"Valor retirado {valor}")
+        if valor <= self.__saldo + self.__limite:
+            self.__saldo -= valor
+            print(f"Valor retirado: {valor}")
+        else:
+            print("Saldo insuficiente para o saque.")
 
     def transferir(self, valor, destino):
-        self.sacar(valor)
-        destino.depositar(valor)
+        if valor <= self.__saldo + self.__limite:
+            self.sacar(valor)
+            destino.depositar(valor)
+            print(f"Transferência de {valor} realizada com sucesso.")
+        else:
+            print("Saldo insuficiente para a transferência.")
 
     @property
     def saldo(self):
         return self.__saldo
-
-    @property
-    def limite(self):
-        return self.__limite
 
     @property
     def limite(self):
