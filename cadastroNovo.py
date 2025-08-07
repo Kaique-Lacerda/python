@@ -11,6 +11,9 @@ def cadastrar_usuario():
         "email": email
     }
 
+    usuarios.append(usuario)
+    print("Usuário cadastrado com sucesso.")
+
 def listar_usuarios():
     if not usuarios:
         print("Nenhum usuário cadastrado.")
