@@ -29,7 +29,7 @@ def remover_usuario():
     try:
         indice = int(input("Digite o número do usuário a ser removido: ")) - 1
         if 0 <= indice < len(usuarios):
-            usuarios.pop(indice)
+            removido = usuarios.pop(indice)
             print("Usuário removido com sucesso.")
         else:
             print("Índice inválido.")
